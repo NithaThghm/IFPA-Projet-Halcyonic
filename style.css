@@ -1,0 +1,176 @@
+/* Reset et Général */
+
+*{
+    margin : 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* Gestion et Stylisation des titres */
+
+h1 { font-size: 300%; }
+
+h2{
+    font-size: 200%; 
+    line-height: 150%;}
+
+h3{ font-size: x-large; }
+
+/* Text Colors */
+
+.text-in-white{ color: white; }
+.text-in-black{ color: black; }
+.text-in-gray{ color: gray; }
+.text-in-bluegray{ color: #5d8aa8}
+
+/* Mise en page paragraphe & Backgrounds */
+
+.paragraphe-styling{
+    font-size: larger;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.text-align{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* ---- CSS pour les médias ---- */
+
+    /* -- Gestion CSS des images -- */
+
+        .image-border{
+            border : 10px solid white;
+        }
+
+        .image-banner{
+            display: block;
+            image-rendering: auto;
+            height: 75%;
+            width: 75%;
+        }
+
+        .image-article{
+            height: 125px;
+        }
+
+        .image-check{ margin-right : 8%;}
+
+    /* -- Bouttons interactifs -- */
+
+        .button-section1{
+            display: block;
+            background-color: red;
+            color: white;
+            font-size: 200%;
+            border: none;
+            width: 35%;
+            height: 20%;
+            border-radius: 10px;
+            margin-bottom: 2%;
+        }
+
+/* ---- Structuration de la page HTML ---- */
+
+    /* -- Definition des sections -- */
+
+        .border-section{
+            border: 1px dashed blueviolet;
+        }
+
+        header{
+            background-image: url(./images/assets/bg01.jpg);
+            height: 150px;
+        }
+
+        .section-1{
+            background-image: url(./images/assets/bg01.jpg);
+            height: 350px;
+        }
+
+        .section-2{
+            background-image: url(./images/assets/bg02.jpg);
+            height: 400px;
+        }
+
+        .section-3{
+            background-image: url(./images/assets/bg04.png);
+            height: 550px;
+        }
+
+        .section-4{
+            background-image: url(./images/assets/bg03.jpg);
+            height: 312px;
+        }
+        
+        footer{
+            height: 160px;
+            background-image: url(./images/assets/bg03.jpg);
+        }
+
+
+    /* -- Gestion des Container Flex -- */
+
+        .main-container-flex{
+            border: 1px solid yellow;
+            display : flex;
+            align-items: center;
+            justify-content: space-between;
+            margin : auto;
+            width: 70%;
+            height: 100%;
+        }
+
+        .flex-item-column{
+            border: 1px solid pink;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    
+        .flex-item-row{
+            border: 1px solid blue;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .flex-row-border{ 
+            border-top: 1px solid black;
+            border-bottom: 1px solid black; }
+
+    /* -- Gestion des width, height et des spécifiques des containers flex -- */
+
+        .height-20{ height: 20%;}
+        .height-80{ height: 80%; }
+        .height-75{ height: 75%; }
+        .width-24{ width: 24%;}
+        .width-70{width: 70%;}
+
+        .specifique-section3{
+            width: 26%;
+            background-color: white;
+            padding: 20px 20px;
+        }
+
+        .specifique2-section3{
+            border-bottom: 1px solid gray;
+            padding-bottom: 5%;
+            height: 10%;
+            font-size: 23px;
+        }
+
+        .specifique-section4{
+            font-size: 20px;
+            padding-bottom: 10%;
+        }
+
+        .specifique2-section4{
+            border-bottom: 1px solid gray;
+        }
