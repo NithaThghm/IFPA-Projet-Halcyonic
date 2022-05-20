@@ -5,114 +5,145 @@
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
+     
         <header class="border-section">
-            <div class="main-container-flex">
+            <div class="main-container-flex flex-header">
                 <h1 class="text-in-white">Halcyonic</h1>
-                <nav class="width-70">
-                    <ul class="flex-item-row">
-                        <li><a class ="text-in-white" href="#homepage"><h3>Homepage</h3></a></li>
-                        <li><a class ="text-in-white" href="#threecolumn"><h3>Three column</h3></a></li>
-                        <li><a class ="text-in-white" href="#twocolumn1"><h3>Two Column #1</h3></a></li>
-                        <li><a class ="text-in-white" href="#twocolumn2"><h3>Two Column #2</h3></a></li>
-                        <li><a class ="text-in-white" href="#onecolumn"><h3>One Column</h3></a></li>
+                <nav class="navbar">
+                    <ul class="flex-navbar-list">
+                        <li><a class ="text-in-white nav-title" href="#homepage"><h3>Homepage</h3></a></li>
+                        <li><a class ="text-in-white nav-title" href="#threecolumn"><h3>Three column</h3></a></li>
+                        <li><a class ="text-in-white nav-title" href="#twocolumn1"><h3>Two Column #1</h3></a></li>
+                        <li><a class ="text-in-white nav-title" href="#twocolumn2"><h3>Two Column #2</h3></a></li>
+                        <li><a class ="text-in-white nav-title" href="#onecolumn"><h3>One Column</h3></a></li>
                     </ul>
                 </nav>
+                <button class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
             </div> 
         </header>
+
+
+
         <main>
-            <section id="section1" class="border-section section-1">
+
+            <!-- SECTION 1 -->
+            <section id="section-1" class="border-section">
                 <div class="main-container-flex">
-                    <div class = "flex-item-column height-80">
-                        <h2 class="text-in-white">We do something really useful, important, and unique. Learn all about it here...</h2>
-                        <button class="button-section1">Go on, click me!</button>
+                    <div id="flx-contain-wraprev">
+                        <div class = "flx-itm-sec1">
+                            <h2 class="text-in-white">We do something really useful, important, and unique. Learn all about it here...</h2>
+                            <button class="button-section1"><strong>Go on, click me!</strong></button>
+                        </div>
+                        <img class ="image-border image-banner" src="./images/images/banner.jpg" alt="Image banner : Montagne en noir et blanc">
                     </div>
-                    <img class ="image-border image-banner" src="./images/images/banner.jpg" alt="Image banner : Montage en noir et blanc">
                 </div>
             </section>
 
+            <!-- SECTION 2 -->
             <section id="section2" class="border-section section-2">
                 <div class="main-container-flex">
-                    <div class="flex-item-column height-80 width-24 responsivetest-align-section2">
-                        <img class="image-border image-article" src="./images/images/pic01.jpg" alt="">
-                        <h3 class="text-in-white">Welcome to Halcyonic</h3>
-                        <p class ="text-in-white paragraphe-styling">This is <strong>Halcyonic</strong>, a free site templated by <strong>AJ</strong> for <strong>HTML5 UP</strong>. It's responsive, built on HTML5 + CSS3, and includes 5 unique page layouts.</p>
-                    </div>
+                    <div id="flx-contain-wrap">
+                        <div class="flx-itm-sec2">                       
+                            <img class="image-border image-section2" src="./images/images/pic01.jpg" alt="Image d'illustration en noir et blanc : une rue principale urbaine pleine de voitures entre plusieurs immeuble">
+                            <div class="paragraphe-sec2 height-80 width-24 responsivetest-align-section2">
+                                <h3 class="text-in-white">Welcome to Halcyonic</h3>
+                                <p class ="text-in-white paragraphe-styling">This is <strong>Halcyonic</strong>, a free site templated by <strong>AJ</strong> for <strong>HTML5 UP</strong>. It's responsive, built on HTML5 + CSS3, and includes 5 unique page layouts.</p>
+                            </div>
+                        </div>
 
-                    <div class="flex-item-column height-80 width-24 responsivetest-align-section2">
-                        <img class="image-border image-article" src="./images/images/pic02.jpg" alt="">
-                        <h3 class="text-in-white">Responsive You Say ?</h3>
-                        <p class ="text-in-white paragraphe-styling">Yes! Halcyonic is built to be fully responsive so it looks great at every screen size, from desktops to tables to mobile phones.</p>
-                    </div>
+                        <div class="flx-itm-sec2">
+                            <img class="image-border image-section2" src="./images/images/pic02.jpg" alt="">
+                            <div class="paragraphe-sec2 height-80 width-24 responsivetest-align-section2">
+                                <h3 class="text-in-white">Responsive You Say ?</h3>
+                                <p class ="text-in-white paragraphe-styling">Yes! Halcyonic is built to be fully responsive so it looks great at every screen size, from desktops to tables to mobile phones.</p>
+                            </div>
+                        </div>
 
-                    <div class="flex-item-column height-80 width-24 responsivetest-align-section2">
-                        <img class="image-border image-article" src="./images/images/pic03.jpg" alt="">
-                        <h3 class="text-in-white">License Info</h3>
-                        <p class ="text-in-white paragraphe-styling">Halcyonic is licensed under the <strong>CCA</strong> licence, so use it for personnal/commercial use as much as you like (just keep our credits intact).</p>
-                    </div>
+                        <div class="flx-itm-sec2">
+                            <img class="image-border image-section2" src="./images/images/pic03.jpg" alt="">
+                            <div class="paragraphe-sec2 height-80 width-24 responsivetest-align-section2">
+                                <h3 class="text-in-white">License Info</h3>
+                                <p class ="text-in-white paragraphe-styling">Halcyonic is licensed under the <strong>CCA</strong> licence, so use it for personnal/commercial use as much as you like (just keep our credits intact).</p>
+                            </div>
+                        </div>
 
-                    <div class="flex-item-column height-80 width-24 responsivetest-align-section2">
-                        <img class="image-border image-article" src="./images/images/pic04.jpg" alt="">
-                        <h3 class="text-in-white">Volutpat etiam aliquam</h3>
-                        <p class ="text-in-white paragraphe-styling">Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna mollis.</p>
+                        <div class="flx-itm-sec2">
+                            <img class="image-border image-section2" src="./images/images/pic04.jpg" alt="">
+                            <div class="paragraphe-sec2 height-80 width-24 responsivetest-align-section2">
+                                <h3 class="text-in-white">Volutpat etiam aliquam</h3>
+                                <p class ="text-in-white paragraphe-styling">Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna mollis.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
+            <!-- SECTION 3 -->
             <section id="section3" class="border-section section-3">
                 <div class="main-container-flex">
-                    <div class="flex-item-column height-80 specifique-section3">
-                        <div class="flex-item-column height-20">
-                            <h2>Who We Are</h2>
-                            <h3 class="text-in-bluegray">A subheading about who we are</h3>
-                        </div>
-                        <div class="flex-item-column height-75">
+                    <div id="flx-contain-wrap">
+                        <div class="flx-itm-sec3 height-80 specifique-section3">
+                            <div class="paragraphe-sec3 height-20">
+                                <h2>Who We Are</h2>
+                                <h3 class="text-in-bluegray">A subheading about who we are</h3>
+                            </div>
                             <img src="./images/images/pic05.jpg" alt="">
-                            <p class="paragraphe-styling">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, placeat cum? Laudantium, autem voluptatibus saepe alias nobis magni neque unde quia itaque, atque ut recusandae inventore porro enim! Incidunt, laudantium.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex-item-column height-80 specifique-section3">
-                        <div class = "flex-item-column height-20">
-                            <h2>What We Do</h2>
-                            <h3 class="text-in-bluegray">A subheading about who we do</h3>
-                        </div>
-                        <div class ="flex-item-column height-75">
-                            <p class="specifique2-section3"><img class ="image-check" src="./images/assets/icon-checkmark.png" alt="">Sed mattis quis rutrum accum</p>
-                            <p class="specifique2-section3"><img class ="image-check" src="./images/assets/icon-checkmark.png" alt="">Eu varius nibh suspendisse lorem</p>
-                            <p class="specifique2-section3"><img class ="image-check" src="./images/assets/icon-checkmark.png" alt="">Magna eget odio amet mollis justo</p>
-                            <p class="specifique2-section3"><img class ="image-check" src="./images/assets/icon-checkmark.png" alt="">Facilisis quis sagittis mauris</p>
-                            <p class="specifique2-section3"><img class ="image-check" src="./images/assets/icon-checkmark.png" alt="">Amet tellus gravida lorem ipsum</p>
-                        </div>
-                    </div>
-
-                    <div class="flex-item-column height-80 specifique-section3">
-                        <div class = "flex-item-column height-20">
-                            <h2>What People Are Saying</h2>
-                            <h3 class="text-in-bluegray">And a final subheading about our clients</h3>
+                            <div class="paragraphe-sec3 height-75">
+                                <p class="paragraphe-styling">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, placeat cum? Laudantium, autem voluptatibus saepe alias nobis magni neque unde quia itaque, atque ut recusandae inventore porro enim! Incidunt, laudantium.</p>
+                            </div>
                         </div>
 
-                        <div class="flex-item-column height-75">
-                            <div class="flex-item-row">
-                                <img class="image-check" src="./images/images/pic06.jpg" alt="">
-                                <div class="flex-item-row">
-                                    <p class="paragraphe-styling"><em>"Neque nisidapibus mattis"</em><br/><strong>Jane Doe, CEO of UntitledCorp</strong></p>
-                                </div>
-                                </div>
+                        <div class="flx-itm-sec3 larg45 height-80 specifique-section3">
+                            <div class = "paragraphe-sec3 height-20">
+                                <h2>What We Do</h2>
+                                <h3 class="text-in-bluegray">A subheading about who we do</h3>
+                            </div>
+                            <div class ="paragraphe-sec3 height-75">
+                                <p class="border-sec3"><img class ="image-check" src="./images/assets/icon-checkmark.png" alt="">Sed mattis quis rutrum accum</p>
+                                <p class="border-sec3"><img class ="image-check" src="./images/assets/icon-checkmark.png" alt="">Eu varius nibh suspendisse lorem</p>
+                                <p class="border-sec3"><img class ="image-check" src="./images/assets/icon-checkmark.png" alt="">Magna eget odio amet mollis justo</p>
+                                <p class="border-sec3"><img class ="image-check" src="./images/assets/icon-checkmark.png" alt="">Facilisis quis sagittis mauris</p>
+                                <p class="border-sec3"><img class ="image-check" src="./images/assets/icon-checkmark.png" alt="">Amet tellus gravida lorem ipsum</p>
+                            </div>
+                        </div>
 
-                            <div class="flex-item-row flex-row-border">
-                                <img class="image-check" src="./images/images/pic07.jpg" alt="">
-                                <div class="flex-item-row">
-                                    <p class="paragraphe-styling"><em>"Lorem ipsum consequat"</em><br/><strong>John Doe, President of Fakebiz</strong></p>
-                                </div>
+                        <div class="flx-itm-sec3 larg45 height-80 specifique-section3">
+                            <div class = "paragraphe-sec3 height-20">
+                                <h2>What People Are Saying</h2>
+                                <h3 class="text-in-bluegray">And a final subheading about our clients</h3>
                             </div>
 
-                            <div class="flex-item-row">
-                                <img class="image-check" src="./images/images/pic08.jpg" alt="">
+                            <div class="flex-item-column height-75">
                                 <div class="flex-item-row">
-                                    <p class="paragraphe-styling"><em>"Magna veroceros amet tempus"</em><br/><strong>Mary Smith, CFO of UntitledBiz</strong></p>
+                                    <img class="image-check" src="./images/images/pic06.jpg" alt="">
+                                    <div class="paragraphe-sec3">
+                                        <p><em>"Neque nisidapibus mattis"</em></p>
+                                        <h4><strong>Jane Doe, CEO of UntitledCorp</strong></h4>
+                                    </div>
+                                    </div>
+
+                                <div class="flex-item-row flex-row-border">
+                                    <img class="image-check" src="./images/images/pic07.jpg" alt="">
+                                    <div class="paragraphe-sec3">
+                                        <p><em>"Lorem ipsum consequat"</em></p>
+                                        <h4><strong>John Doe, President of Fakebiz</strong></h4>
+                                    </div>
+                                </div>
+
+                                <div class="flex-item-row">
+                                    <img class="image-check" src="./images/images/pic08.jpg" alt="">
+                                    <div class="paragraphe-sec3">
+                                        <p><em>"Magna veroceros amet tempus"</em></p>
+                                        <h4><strong>Mary Smith, CFO of UntitledBiz</strong></h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -120,43 +151,46 @@
                 </div>
             </section>
 
+            <!-- SECTION 4 -->
             <section id="section4" class="border-section section-4">
                 <div class="main-container-flex">
-                    <div class="flex-item-column height-80 width-70">
-                        <h3 class="text-in-black">Links to Important Stuff</h3>
-                        <div class="flex-item-row height-80 text-in-bluegray"> 
-                            <ul class="flex-item-column width-24">
-                                <li class ="specifique-section4 specifique2-section4 "><a class="text-in-bluegray" href="">Neque amet dapibus</a></li>
-                                <li class ="specifique-section4 specifique2-section4"><a class="text-in-bluegray" href="">Sed mattis quis rutrum</a></li>
-                                <li class ="specifique-section4 specifique2-section4"><a class="text-in-bluegray" href="">Accumsan suspendisse</a></li>
-                                <li class ="specifique-section4"><a class="text-in-bluegray" href="">Eu varius vitae magna</a></li>
-                            </ul>
+                    <div id="flx-contain-wraprev">
+                        <div class="flx-itm-sec4 height-80 width-70">
+                            <h3 class="text-in-black">Links to Important Stuff</h3>
+                            <div id="flx-contain-wrap" class="height-80 text-in-bluegray"> 
+                                <ul class="paragraphe-sec4 larg25">
+                                    <li><a class="text-in-bluegray" href="">Neque amet dapibus</a></li>
+                                    <li><a class="text-in-bluegray" href="">Sed mattis quis rutrum</a></li>
+                                    <li><a class="text-in-bluegray" href="">Accumsan suspendisse</a></li>
+                                    <li><a class="text-in-bluegray" href="">Eu varius vitae magna</a></li>
+                                </ul>
 
-                            <ul class="flex-item-column width-24">
-                                <li class ="specifique-section4 specifique2-section4 "><a class="text-in-bluegray" href="">Neque amet dapibus</a></li>
-                                <li class ="specifique-section4 specifique2-section4"><a class="text-in-bluegray" href="">Sed mattis quis rutrum</a></li>
-                                <li class ="specifique-section4 specifique2-section4"><a class="text-in-bluegray" href="">Accumsan suspendisse</a></li>
-                                <li class ="specifique-section4"><a class="text-in-bluegray" href="">Eu varius vitae magna</a></li>
-                            </ul>
+                                <ul class="paragraphe-sec4 larg25">
+                                    <li><a class="text-in-bluegray" href="">Neque amet dapibus</a></li>
+                                    <li><a class="text-in-bluegray" href="">Sed mattis quis rutrum</a></li>
+                                    <li><a class="text-in-bluegray" href="">Accumsan suspendisse</a></li>
+                                    <li><a class="text-in-bluegray" href="">Eu varius vitae magna</a></li>
+                                </ul>
 
-                            <ul class="flex-item-column width-24">
-                                <li class ="specifique-section4 specifique2-section4 "><a class="text-in-bluegray" href="">Neque amet dapibus</a></li>
-                                <li class ="specifique-section4 specifique2-section4"><a class="text-in-bluegray" href="">Sed mattis quis rutrum</a></li>
-                                <li class ="specifique-section4 specifique2-section4"><a class="text-in-bluegray" href="">Accumsan suspendisse</a></li>
-                                <li class ="specifique-section4"><a class="text-in-bluegray" href="">Eu varius vitae magna</a></li>
-                            </ul>
+                                <ul class="paragraphe-sec4 larg25">
+                                    <li><a class="text-in-bluegray" href="">Neque amet dapibus</a></li>
+                                    <li><a class="text-in-bluegray" href="">Sed mattis quis rutrum</a></li>
+                                    <li><a class="text-in-bluegray" href="">Accumsan suspendisse</a></li>
+                                    <li><a class="text-in-bluegray" href="">Eu varius vitae magna</a></li>
+                                </ul>
 
-                            <ul class="flex-item-column width-24">
-                                <li class ="specifique-section4 specifique2-section4 "><a class="text-in-bluegray" href="">Neque amet dapibus</a></li>
-                                <li class ="specifique-section4 specifique2-section4"><a class="text-in-bluegray" href="">Sed mattis quis rutrum</a></li>
-                                <li class ="specifique-section4 specifique2-section4"><a class="text-in-bluegray" href="">Accumsan suspendisse</a></li>
-                                <li class ="specifique-section4"><a class="text-in-bluegray" href="">Eu varius vitae magna</a></li>
-                            </ul>
+                                <ul class="paragraphe-sec4 larg25">
+                                    <li><a class="text-in-bluegray" href="">Neque amet dapibus</a></li>
+                                    <li><a class="text-in-bluegray" href="">Sed mattis quis rutrum</a></li>
+                                    <li><a class="text-in-bluegray" href="">Accumsan suspendisse</a></li>
+                                    <li><a class="text-in-bluegray" href="">Eu varius vitae magna</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex-item-column height-80 width-24">
-                        <h3 class ="text-in-black">An Informative Text Blurb</h3>
-                        <p class="text-in-bluegray paragraphe-styling height-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat labore aperiam est pariatur aliquam ipsum illum libero quam cum repellat necessitatibus amet soluta adipisci, rerum facilis nemo at dicta doloribus.</p>
+                        <div class="paragraphe-sec4 height-80 width-24">
+                            <h3 class ="text-in-black">An Informative Text Blurb</h3>
+                            <p class="text-in-bluegray paragraphe-styling height-80">Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi, dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.</p>
+                        </div>
                     </div>
                 </div>
             </section>
