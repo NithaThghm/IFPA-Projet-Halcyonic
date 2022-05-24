@@ -4,7 +4,6 @@
 
 
     /* Reset CSS navigateur et CSS valable à l'ensemble de la page web */
-    /* Ligne à la con */
 
     *{
         margin : 0;
@@ -37,10 +36,10 @@
 
     /* Conteneur flex pour la page web */    
 
-    .main-container-flex{
+    .main-container{
         /* margin : 10% auto 5%; */
-        margin: auto;
         width: 96%;
+        margin: auto;
     }
 
     #flx-contain-wrap{
@@ -72,6 +71,13 @@
         padding: 2% 0%;
     }
 
+    .flex-header{
+        display: flex;
+        flex-flow: row-reverse wrap;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
     .flex-header h1{
         font-size: 25px;
         margin: auto;
@@ -79,13 +85,6 @@
 
     .navbar{
         display: none;
-    }
-
-    .flex-header{
-        display: flex;
-        flex-flow: row-reverse wrap;
-        width: 100%;
-        justify-content: flex-end;
     }
 
     .hamburger{
@@ -123,6 +122,12 @@
         display: block;
         width: 100%;
         /* image-rendering: auto; */
+    }
+
+    .flex-section1{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding : 5%;
     }
 
     .flx-itm-sec1{
@@ -348,9 +353,8 @@
         }
 
 
-
-
         /* -- SECTION 1 -- */
+
         .flx-itm-sec1{
             align-items: center;
             font-size: 18px;
@@ -408,7 +412,7 @@
 
     @media screen and (min-width: 1281px){
 
-        .main-container-flex{
+        .main-container{
             margin: auto;
             width: 1200px;
         }
