@@ -30,8 +30,8 @@
     
     /* Bordures de visualiation des box flex */
 
-    .flxwrpbd{border: 1px solid red}; /* flex box de type de flow wrap */
-    .flxwraprevbd{border: 1px solid red};/* flex box de type de flow wrap */
+    .flxwrpbd{border: 1px solid red} /* flex box de type de flow wrap */
+    .flxwraprevbd{border: 1px solid red}/* flex box de type de flow wrap */
 
 
     /* Conteneur flex pour la page web */    
@@ -67,6 +67,7 @@
     /* -- HEADER - NAV BAR -- */
 
     header{
+        position : relative;
         background-image: url(./images/assets/bg01.jpg);
         padding: 2% 0%;
     }
@@ -76,6 +77,7 @@
         flex-flow: row-reverse wrap;
         width: 100%;
         justify-content: flex-end;
+    
     }
 
     .flex-header h1{
@@ -115,6 +117,7 @@
     /* -- SECTION 1 -- */
 
     #section-1{
+        position : relative;
         background-image: url(./images/assets/bg01.jpg);
     }
 
@@ -127,7 +130,7 @@
     .flex-section1{
         display: flex;
         flex-wrap: wrap-reverse;
-        padding : 5%;
+        padding : 3%;
     }
 
     .flx-itm-sec1{
@@ -137,7 +140,7 @@
         justify-content: space-between;
         flex-direction: column;
         margin-top: 6%;
-        padding-bottom: 5%;
+        /* padding-bottom: 5%; */
         font-size: 14px;
         line-height: 170%;
         width: 100%;
@@ -162,6 +165,7 @@
     /* -- SECTION 2 -- */
 
     .section-2{
+        position : relative;
         background-image: url(./images/assets/bg02.jpg);
         /* height: 400px; */
     }
@@ -194,6 +198,7 @@
     /* -- SECTION 3 -- */
 
     .section-3{
+        position : relative;
         background-image: url(./images/assets/bg04.png);
     }
 
@@ -245,6 +250,7 @@
     /* -- SECTION 4 -- */
     
     .section-4{
+        position : relative;
         background-image: url(./images/assets/bg03.jpg);
     }
 
@@ -276,6 +282,7 @@
     /* -- FOOTER -- */
 
     footer{
+        position : relative;
         background-image: url(./images/assets/bg03.jpg);
     }
 
@@ -295,7 +302,7 @@
         }
 
         .button-section1{
-            width: 50%;
+            width: 40%;
         }
 
         /* -- SECTION 2 -- */
@@ -355,24 +362,37 @@
 
         /* -- SECTION 1 -- */
 
+        .flex-section1{
+            position: relative;
+            padding: 3% 0%;
+        }
+
         .flx-itm-sec1{
-            align-items: center;
-            font-size: 18px;
+            /* align-items: center; */
+            /* justify-content: space-between; */
+            /* justify-items: flex-start; */
+            text-align: left;
+            line-height: 40px;
+            font-size: 20px;
             width: 50%;
             height: 100%;
             margin-top: 0%;
+            outline: 1px solid yellow;
         }
 
         .image-banner{
             display: block;
             width: 50%;
             /* image-rendering: auto; */
-            /* height: 75%; */
+            /* height: 200px; */
         }
 
         .button-section1{
             width: 50%;
-            padding: none;
+            padding: 0;
+            margin-top: 50px;
+            margin-bottom: 0;
+
         }
 
 
